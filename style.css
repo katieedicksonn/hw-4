@@ -1,0 +1,19 @@
+#answers button {
+    background-color: lightseagreen; /* Green background */
+    border: 1px solid rgb(224, 79, 79); /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+  #answers button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .answers button:hover {
+    background-color: #3e8e41;
+  }
+  
