@@ -8,36 +8,66 @@
 </head>
 <body>
 
-<div id="quiz"></div>
+<!-- <div id="quiz"></div>
 <h1> The drink quiz</h1>
 <button id="submitButton">Click to Begin Game</button>
 <div id="Score"></div>
 
 <div id = "time"> Time that is left: <span id = "timerText"> </span> 
+</div> -->
+
+
+
+<div id = "quizBox">
+<!-- where my question switches-->
+<p id = question> first question</p>
+
+<div id = "buttons" > 
+<button onclick= "buttonclick(event)"  id = "ans1"> </button>
+<button onclick= "buttonclick(event)" id = "ans2">  </button>
+<button onclick= "buttonclick(event)" id = "ans3">  </button>
+<button onclick= "buttonclick(event)" id = "ans4">  </button>
+</div>
+</div>
+<div>
+<button id="startGame"> Startgame</button>
+</div>
+<p id= "timerLine" > Time Remaining: <span id="timerText"></span> remaining
+</p>
+
+
+<div id= "scoreBox">
+    <ul id="scoresList"></ul>
+
 </div>
 
-<div id = "questions"> 
-    "this is my questions"
-</div>
 
-<div id = "answers">
-<!-- where my answers go -->
-
-<button id = "ans1"> answer 1 </button>
-<button id = "ans2"> answer 2 </button>
-<button id = "ans3"> answer 3 </button>
-<button id = "ans4"> answer 4 </button>
-</div>
-
-<div id = "gameOver"> 
+<!-- <div id = "gameOver"> 
     <div> Game Over</div>
-    <div id = "finalScore"> final score </div>
+    <div id = "finalScore"> final score </div> -->
+
+<!-- THIS IS MY FINAL SCORE WHERE THEY PUT IN THEIR INFO -->
+<div id=finalScore>
+<div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Score</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 
 </div>
 
 
 
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </body>

@@ -1,4 +1,4 @@
-#answers button {
+#answers, #buttons, p {
     background-color: lightseagreen; /* Green background */
     border: 1px solid rgb(224, 79, 79); /* Green border */
     color: white; /* White text */
